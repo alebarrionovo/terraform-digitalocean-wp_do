@@ -21,5 +21,5 @@ module "wp_stack" {
 
 resource "digitalocean_ssh_key" "ssh" {
   name       = "wp-ssh"
-  public_key = file("~/.ssh/terraform.pub")
+  public_key = file("~/Documents/digitalocean/terraform.pub")
 }
