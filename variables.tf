@@ -1,3 +1,6 @@
+variable "do_token" {
+  type = string
+}
 
 variable "region" {
   type    = string
@@ -14,9 +17,3 @@ variable "wp_vm_count" {
     error_message = "O número mínimo de máquinas é 2"
   }
 }
-
-variable "vms_ssh" {
-  type = string
-  description = "Chave ssh para as VMs"
-}
-
