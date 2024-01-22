@@ -8,12 +8,12 @@ variable "region" {
 }
 
 variable "wp_vm_count" {
-  type    = number
-  default = 2
+  type        = number
+  default     = 2
   description = "Número de máquinas para o wordpress"
 
   validation {
-    condition = var.wp_vm_count > 1
+    condition     = var.wp_vm_count > 1
     error_message = "O número mínimo de máquinas é 2"
   }
 }

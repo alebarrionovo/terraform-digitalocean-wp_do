@@ -12,10 +12,10 @@ provider "digitalocean" {
 }
 
 module "wp_stack" {
-  source  = "./modules/do-wp-stack"
-  version = "1.0.0"
-  region = var.region
-  vms_ssh = digitalocean_ssh_key.ssh.fingerprint
+  source      = "alebarrionovo/modules-wo-do/digitalocean"
+  version     = "1.0.0"
+  region      = var.region
+  vms_ssh     = digitalocean_ssh_key.ssh.fingerprint
   wp_vm_count = var.wp_vm_count
 }
 
